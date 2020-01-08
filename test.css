@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+}
+.game{
+  width: 1000px;
+  height: 100%;
+  position: relative;
+}
+
+.auto{
+  background-color: black;
+  animation: brrruum 8s infinite;
+  display: inline-block;
+  animation-timing-function: linear;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+.zero{
+  display: none;
+}
+
+
+
+.licz{
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 500px;
+}
+
+@keyframes brrruum{
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+
+}
