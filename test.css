@@ -1,6 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
+  padding: 0;
+  margin: 0;
+  counter-reset: card;
 }
+
+.card{
+  counter-increment: card_number;
+
+}
+.card_number::before{
+  font-size: 40px;
+  content: counter(card_number)
+
+}
+
+.card{
+  width: 100px;
+  height: 150px;
+  background-color: red;
+
+}
+
+
+
 .game{
   width: 1000px;
   height: 100%;
@@ -23,8 +50,8 @@ body {
 
 
 .licz{
-  color: red;
-  font-size: 40px;
+  color: darkred;
+  font-size: 70px;
   display: inline-block;
   position: absolute;
   left: 50%;
