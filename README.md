@@ -5,4 +5,4 @@ markdown
 
 #### procedura instalacji
 1. skopiuj plik lokalnie na komputer
-2. uruchom plik 
+2. uruchom plik ```html```
